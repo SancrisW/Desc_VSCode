@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2? family= Lobster+Two:ital,wght@0,400;1,700 & family= Open+Sans & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;1,700&family=Metal+Mania&family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;1,700&family=Metal+Mania&family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cor cabeçalho e tamanho*/
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+/* lista de menu em horizonte*/
+.menu li{
+    display: inline;
+}
+
+/* cor das letras,distância, horizontal, estilo texto*/
+.menu li a{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lobster Two', cursive;
+}
+
+/*logo*/
+.logo-img{
+    width:64px;
+    height: 15px;
+    position: absolute;
+    left: 20px;
+}
+
+.logo-texto {
+    color:white;
+    text-decoration: none;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Metal Mania', cursive;
+    padding: 10px;
+    position: absolute;
+    left: 80px;
+}
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 600px;
+    background: url('../img/f2.jpg');
+    background-repeat: no-repeat;  /*não repetir a img*/
+    background-size: cover; /*a img preenche o tamanho delimitado sem distorção*/
+    background-position: center;/*manter a img ao centro*/
+    text-align: right;
+    padding-top: 150px;
+    padding-right: 200px;
+}
+
+.texto1{
+    color:white;
+    font-style: italic;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-indent: 12px;
+    
+}
+
+.texto2{
+    color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.texto3{
+    color: white; 
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
