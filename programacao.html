@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/><!--link com css-->
+    <script src="slide.js" defer></script><!--link co javascripts-->
     <link href="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0 "/>
     <title>CrysCode</title>
 </head>
 <body>
     <header>
         <div class="container-logo">
-            <div class="logo-img">
+            <div class="logo-img" >
                 <a href="index.html"><img src="img/galaxy-3468_512.gif"></a>
             </div>
-           
         </div>
+
         <div class="logo-texto">
-            <h1>CrisCode</h1>
+            <a href="index.html"><h1 style="color: rgba(187, 30, 2, 0.952);">CrisCode</h1></a>
         </div>
 
         <div class="menu">
@@ -25,13 +26,61 @@
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="sobreNos.html">Sobre Nós</a></li>
                 <li><a href="programacao.html">Programação</a></li>
-                <li><a href="palestrante.html">Palestrantes</a></li>
+                <li><a href="palestras.html">Palestras</a></li>
                 <li><a href="local.html">Local</a></li>
             </ul>
+        </div>        
+    </header>
+
+    <section><!--corpo da página-->
+        <div class="programacao"></div><!--banner-->        
+    </section>
+
+    <div class="faixa"></div>
+
+    <section class="slider"><!--estrutura do slide- carrossel-->
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro"><!--baixando as imgs-->
+            <a href="https://descodificadas.com.br/inscricao/"><img src="img/desc5.png" alt="slide 1" style=" width: 400px; height: 175px;margin: 8px"></a>
+            <a href="https://www.maismulheres.tech/collections"><img src="img/word.png" alt="" style=" width: 400px; height: 175px; margin: 8px"></a>
+            <a href="https://www.programaria.org/cursos-programaria/"><img src="img/prog.png" alt="" style=" width: 400px; height: 175px;margin: 5px; margin-right: 10px"></a>
+        </div>    
+            
+        <div class="slide-box">
+            <a href="https://www.britishcouncil.org.br/estude-reino-unido"><img src="img/bb1.png" alt="slide 2" style=" width: 400px; height: 175px;margin: 8px"></a>
+            <a href="https://www.cisco.com/c/m/en_sg/partners/women-rock-it.html"><img src="img/a4.png" alt="" style=" width: 400px; height: 175px;margin: 8px"></a>
+            <a href="https://www.datascienceacademy.com.br/courses"><img src="img/novo.png" alt="" style=" width: 400px; height: 175px;margin: 5px; margin-right: 10px"></a>
         </div>
         
-    </header>
-    
-    
+        <div class="slide-box">
+            <a href="https://selecao.laboratoria.la/?utm_source=laboratoria_web&utm_medium=header&utm_campaign=header_laboratoria-web">
+            <img src="img/laboratoria3.png" alt="slide 3" style=" width: 400px; height: 175px;margin: 8px"></a>
+                        
+            <a href="https://reprograma.com.br/projetos/"><img src="img/reprog1.png" alt="" style=" width: 400px; height: 175px;margin: 8px"></a>
+            <img src="img/prog.png" alt="" style=" width: 400px; height: 175px;margin: 5px; margin-right: 10px">
+                
+            
+            <a href=" https://euquero.42sp.org.br/?gclid=CjwKCAjwp6CkBhB_EiwAlQVyxeJOIdWOqTNaJBPids0GkmGZk1V0lyjPlD3CQSS9QIONlw_jMICJ6RoCkksQAvD_BwE"><img src="img/reprog1.png" alt="" style=" width: 400px; height: 175px;margin: 8px"></a>
+            <img src="img/prog.png" alt="" style=" width: 400px; height: 175px;margin: 5px; margin-right: 10px">
+                
+        </div>
+
+        <div class="nav-auto"><!--navegação das imgs automático-->
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual"><!--navegação manual das imgs-->
+            <label for="radio1" class="manual-btn"></label><!--label faz referência ao input, for o chama-->
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+    </section>           
 </body>
 </html>

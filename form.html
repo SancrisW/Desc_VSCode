@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     h2{
+        text-align: center;
+     }
+     form {
+        text-align: left;
+        margin-left: 220px;
+     }
+    </style>
+</head>
+
+<body style="padding-top: 30px; background-color: cadetblue;">
+    <h2>
+        PESQUISA
+    </h2>
+    <form style="padding-top: 25px;">
+        <table >
+        <p><label for="nome"> Nome:</label>
+            <input id="nome" type=text maxlength="55" title="preencha o campo nome" required name=nome style="padding-right: 500px; margin-left: 80px"/>
+        </p>
+
+        <p style="padding-top: 1px;"> <label font face="Arial" for="Endereço">Email:</label>
+            <input id="Email" type=text maxlength="55" required name=Email style="padding-right: 500px; margin-left: 80px"/>
+        </p>
+
+        <p style="padding-top: 1px;"><label font face="Arial" for="RG"> Celular</label>
+            <input id="celular" type=text maxlength="13" required name=celular size="5" style="margin-left: 75px; padding-left: 140px;"/>
+        
+        <p style="padding-top: 1px;"> Sexo:
+            <select name="Sexo" style="margin-left: 87px; padding-left: 120px; padding-top: 3px" >
+                <option value="fen"> Feminino </option>
+                <option value="mas"> Masculino</option>
+            </select>
+        </p>
+
+        <p style="padding-top: 1px;"> <label font face="Arial" for="Situaçãocivil"> Qual sua formação?</label>
+            <input type="radio" name="cargo" value="1" checked style="margin-left: 25px"/> Ensino Fundamental(a)
+            <input type="radio" name="cargo" value="2" checked style="margin-left: 180px"/> Ensino Médio
+            <input type="radio" name="cargo" value="3" checked style="margin-left: 180px"/> Graduação
+            <input type="radio" name="cargo" value="3" checked style="margin-left: 180px"/> Doutorado
+            <input type="radio" name="cargo" value="3" checked style="margin-left: 180px"/> Outros
+        </p>
+
+        <p style="text-align: center; margin-right: 190px;">
+        <input type=submit value="Limpar Dados"/>
+        </p>
+    </table>
+    </form>
+</body>
+
+</html>

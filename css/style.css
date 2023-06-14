@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2? family= Lobster+Two:ital,wght@0,400;1,700 & family= Open+Sans & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;1,700&family=Metal+Mania&family=Open+Sans:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;1,700&family=Metal+Mania&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*página index-----------------------------------------------------------*/
 /*cor cabeçalho e tamanho*/
 header{
     width: 100%;
@@ -36,7 +39,6 @@ header{
     position: absolute;
     left: 20px;
 }
-
 .logo-texto {
     color:white;
     text-decoration: none;
@@ -47,19 +49,21 @@ header{
     left: 80px;
 }
 
-/*banner*/
+/*banner, mulher*/
 .banner{
-    width: 100%;
-    height: 600px;
-    background: url('../img/f2.jpg');
+    background: url('../img/photo2.png');
     background-repeat: no-repeat;  /*não repetir a img*/
     background-size: cover; /*a img preenche o tamanho delimitado sem distorção*/
-    background-position: center;/*manter a img ao centro*/
+    background-position: 0 30%;/*manter a img ao centro*/
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    padding-top: 100px;
     text-align: right;
-    padding-top: 150px;
     padding-right: 200px;
+    height: 600px;
 }
-
+   
 .texto1{
     color:white;
     font-style: italic;
@@ -81,7 +85,420 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.banner2{
+    height: 50px;
+    width: 100%;
+    background-color:rgb(47, 47, 47);
+}
+.banner3{ /*mão*/
+    background-image: url(../img/f14.jpg);
+    background-repeat: no-repeat;  /*não repetir a img*/
+    background-size: 100%; /*a img preenche o tamanho delimitado sem distorção*/
+    background-position: 0 30%;/*manter a img ao centro*/
+    position: relative;
+    margin-top: 5%;
+    width: 90%;
+    padding-top: 50px;
+    text-align: right;
+    height: 380px;
+    padding-right: 200px;
+}
+.texto4{/*da mulher*/
+    width: 100%;
+}
+
+.banner4{/*oficina*/
+    height: 50px;
+    width: 100%;
+    background-color:rgb(47, 47, 47);
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+.container index{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 15px 15px;
+}
+
+.container index{
+    width: 100%;
+}
+
+/*primeira lista*/
+.pr ul {
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;  
+}
+.desc{
+    background-repeat: no-repeat;
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.tech{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.data{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color:   rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.mt{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color:   rgb(243, 239, 239);
+    border-radius: 10px;
+}
+
+
+/*segunda lista*/
+.seg ul {
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 10px;    
+}
+.rock{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color:  rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.prog{
+    background-repeat: no-repeat;
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.lab{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.reprog{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+/* faixa pesquisa*/
+.pesquisa{
+    background-color: rgb(47, 47, 47);
+    padding: 10px; 
+    margin: 50px; 
+    margin-top: 50px;
+    margin-right: 900px;
+}
+.rodape{
+    width: 100%;
+    padding: 50px;
+    background-color: rgba(231, 231, 238, 0.943);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 
 
+/*--aqui inicia a página da programação------------------------------------------------------------------*/
 
+.programacao{/*img bannner*/
+    background-image: url(../img/programacao2.png);
+    background-repeat: no-repeat;  /*não repetir a img*/
+    background-size: cover; /*a img preenche o tamanho delimitado sem distorção*/
+    background-position: 0 30%;/*manter a img ao centro*/
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 200px;
+}
+.faixa{
+    background-color: rgb(10, 9, 9);
+    width: 100%;
+    height: 50px;
+}
+/*---início do slider---*/
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 278px;
+    padding: 0 !important; /*não criar padding adicionais qdo estiver em outros disp*/
+    overflow: hidden;/*p rolagem ficar escondida*/
+    background-color:  rgb(10, 9, 9);
+}
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;/*div ou img uma do lado da outra*/
+}
+.slider-content input{
+    display: none;/*esconde as bolinhas */
+}
+.slide-box{  
+    width: 0 auto;
+    height: auto;
+    position: relative;
+    text-align: center;
+    background-color: rgb(10, 9, 9);
+    transition: 2s;/*tempo de transição dos slides*/
+    margin: 5px;
+    
+}
+.slide-box img{
+    width: 100%;
+}
+.nav-manual {
+    position: absolute;/*conteúdo não vaze da cx*/
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{/*botões de rolagem*/
+    border: 1px solid rgb(232, 65, 9);
+    padding: 8px;
+    border-radius: 50%;/*formato*/
+    cursor: pointer;/*qdo passar a mão*/
+    transition: 0.2s;/*tempo de acender a cor */
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;/*as bolinhas se afastam, menos a última*/
+}
+.nav-manual .manual-btn:hover{/* preenchendo as bolinhas*/
+    background-color: rgb(232, 65, 9);
+}
+
+/*automatizando as bolinha com javacripts*/
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: rgb(232, 65, 9);
+}
+#radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .manual-btn3{
+    background-color: rgb(232, 65, 9);
+}
+
+/* movimentando a img dentro das bolinhas*/
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+/*---------------fim do slide-------------------------*/
+
+
+
+/*---------------página palestras---------------------------------------------------------------------*/
+
+.banner-palestra{       /*img bannner*/
+    background-image: url(../img/evento2.png);
+    background-repeat: no-repeat;  /*não repetir a img*/
+    background-size: cover; /*a img preenche o tamanho delimitado sem distorção*/
+    background-position: 0 30%;/*manter a img ao centro*/
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 300px;
+}
+.eventos{   
+        height: 5px;
+        width: 100%;
+        background-color:rgb(47, 47, 47);       
+}
+
+/*lista dos eventos, nav*/
+.container-palestra{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 15px 15px;
+}
+
+.container-palestra{
+    width: 100%;
+}
+
+/*primeira lista*/
+.um ul {
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    margin:50px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;  
+}
+.desc1{
+    background-repeat: no-repeat;
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.tech1{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.data1{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color:   rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.mt1{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color:   rgb(243, 239, 239);
+    border-radius: 10px;
+}
+
+
+/*segunda lista*/
+.seg ul {
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 10px;    
+}
+.rock1{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color:  rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.prog1{
+    background-repeat: no-repeat;
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.lab1{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+.reprog1{
+    display: block;
+    height:325px;
+    width: 250px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
+/*fim pág. palestras------------------------------------------------*/
+
+
+/*início pág. local----------------------------------------------------*/
+.banner-mapa{
+    background-image: url(../img/mapa2.png);
+    background-repeat: no-repeat;  /*não repetir a img*/
+    background-size: cover; /*a img preenche o tamanho delimitado sem distorção*/
+    background-position: 0 30%;/*manter a img ao centro*/
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.risca{
+    background-color: rgb(80, 79, 79);
+    width: 100%;
+    height: 7px;
+}
+.risca2{
+    background-color: rgb(202, 229, 217);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: #10177b;
+    font-size: 40px;
+    border: #10177b solid 2px;
+    padding: 20px;
+    
+}
+
+/*mapas*/
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(55, 54, 54) ;
+}
+.mapBox{
+    margin-left: 30px;
+    position: relative;
+    width: 1100px;
+    height:500px;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.mapBox iframe{
+    width: 100%;
+    height: 100%;   
+}
+/*fim local-----------------------------------------------------*/
+
+/*pág sobre nós--------------------------------------------------*/
+.cris{
+    background-image: url(../img/galaxy-3468_256.gif);
+    background-repeat: no-repeat;  /*não repetir a img*/
+    background-size: cover; /*a img preenche o tamanho delimitado sem distorção*/
+    background-position: 0 30%;/*manter a img ao centro*/
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+    color: rgba(187, 30, 2, 0.952);
+    padding-top: 50px;
+}
+.cris1{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    text-align: center;
+}
+
+
+    
