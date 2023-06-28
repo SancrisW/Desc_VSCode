@@ -124,89 +124,23 @@ header{
 .container index{
     width: 100%;
 }
-
-/*primeira lista*/
-.pr ul {
-    display: inline-flex;
-    box-sizing: border-box;
-    justify-content: center;
-    margin: 10px;
-    width: 100%;
-    margin-top: 30px;
+.container{
+    display: grid;
+    background-color: rgb(177, 173, 173);
+    padding: 50px;
+    grid-template-columns: 250px 250px 250px 250px; /*definindo colunas*/
+    grid-auto-rows: 325px 325px 325px 325px;/*definindo linhas*/
+    gap: 44px;
     text-align: center;
-    padding-top: 10px;  
+    padding-top: 80px;  
+    width: max-content;/*nao passa do tamanho da tela*/
 }
-.desc{
+.item{
     background-repeat: no-repeat;
-    display: block;
-    height:325px;
-    width: 250px;
     background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.tech{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.data{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color:   rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.mt{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color:   rgb(243, 239, 239);
     border-radius: 10px;
 }
 
-
-/*segunda lista*/
-.seg ul {
-    display: inline-flex;
-    box-sizing: border-box;
-    justify-content: center;
-    margin: 10px;
-    width: 100%;
-    margin-top: 50px;
-    text-align: center;
-    padding-top: 10px;    
-}
-.rock{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color:  rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.prog{
-    background-repeat: no-repeat;
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.lab{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.reprog{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
 /* faixa pesquisa*/
 .pesquisa{
     background-color: rgb(47, 47, 47);
@@ -326,104 +260,27 @@ section.slider{
     width: 100%;
     height: 300px;
 }
-.eventos{   
-        height: 5px;
-        width: 100%;
-        background-color:rgb(47, 47, 47);       
-}
-
 /*lista dos eventos, nav*/
 .container-palestra{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 15px 15px;
+    background-color: rgb(239, 234, 234);
+    padding: 50px;
+    grid-template-columns: 250px 250px 250px 250px; /*definindo colunas*/
+    grid-auto-rows: 325px 325px 325px 325px;/*definindo linhas*/
+    gap: 49px;
+    text-align: center;
+    padding-top: 80px;  
+    /*width: 1148px;
+    width: 100%;*/
+    width: max-content;/*nao passa do tamanho da tela*/
 }
-
+.item2{
+    background-repeat: no-repeat;
+    background-color: rgb(243, 239, 239);
+    border-radius: 10px;
+}
 .container-palestra{
     width: 100%;
-}
-
-/*primeira lista*/
-.um ul {
-    display: inline-flex;
-    box-sizing: border-box;
-    justify-content: center;
-    margin:50px;
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-    padding-top: 10px;  
-}
-.desc1{
-    background-repeat: no-repeat;
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.tech1{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.data1{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color:   rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.mt1{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color:   rgb(243, 239, 239);
-    border-radius: 10px;
-}
-
-
-/*segunda lista*/
-.seg ul {
-    display: inline-flex;
-    box-sizing: border-box;
-    justify-content: center;
-    margin: 10px;
-    width: 100%;
-    margin-top: 50px;
-    text-align: center;
-    padding-top: 10px;    
-}
-.rock1{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color:  rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.prog1{
-    background-repeat: no-repeat;
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.lab1{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
-}
-.reprog1{
-    display: block;
-    height:325px;
-    width: 250px;
-    background-color: rgb(243, 239, 239);
-    border-radius: 10px;
 }
 /*fim pág. palestras------------------------------------------------*/
 
@@ -494,7 +351,7 @@ section.slider{
 }
 .cris1{
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Cormorant Garamond', serif;
     color: white;
     text-align: center;
